@@ -11,7 +11,8 @@ class ProductController extends Controller
         //echo "Listado de todos los productos";
     }
     public function create(){
-        echo "Formulario para crear un producto";
+        return view("products.create"); //Retorna el formulario para crear los productos
+        //echo "Formulario para crear un producto";
     }
     public function show($name){
         echo "Producto: $name";
