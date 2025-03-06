@@ -6,13 +6,17 @@ use Illuminate\Http\Request;
 
 class ProductController extends Controller
 {
-    public function idex(){
-        echo "Listado de todos los productos";
+    public function index(){
+        return view("products.index");  //Retornar una lista de productos Nombre, categoria, precio
+        //echo "Listado de todos los productos";
     }
     public function create(){
         echo "Formulario para crear un producto";
     }
     public function show($name){
         echo "Producto: $name";
+    }
+    public function showCat($name, $category){
+        echo "Producto: $name, y tiene una categoria como $category";
     }
 }

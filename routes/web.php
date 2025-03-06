@@ -14,6 +14,4 @@ Route::get('/products/create', [ProductController::class, "create"]);
 
 Route::get('/products/{name}', [ProductController::class, "show"]);
 
-Route::get('/products/{name}/{category}', function ($name, $category) {
-    echo "Producto: $name, y tiene una categoria como $category";
-});
+Route::get('/products/{name}/{category}', [ProductController::class, "showCat"]);
