@@ -6,4 +6,4 @@
 
 ### ¿Porqué cree que deberia pasar el primer corte de backend?
 
-Si algo me ha enseñado la vida es que lo qué yo crea no es importante.
+Lo que yo crea no es importante.
