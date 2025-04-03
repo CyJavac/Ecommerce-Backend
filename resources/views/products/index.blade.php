@@ -15,7 +15,7 @@
             <div class="col-md-3">
                 <div class="card">
                     <img src="{{  $product->url_image  }}" class="card-img-top"
-                        alt="Producto">
+                        alt="{{$product->name}}">
                     <div class="card-body">
                         <h5 class="card-title">{{$product->name}}</h5>
                         <p class="card-text">Categoría: {{$product->category_id}}</p>
@@ -26,12 +26,6 @@
             </div>
 
             @endforeach
-
-
-
-            
-
-            
 
         </div>
     </div>
