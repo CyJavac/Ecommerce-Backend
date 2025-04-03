@@ -11,15 +11,14 @@
         <div class="card">
             <div class="row no-gutters">
                 <div class="col-md-4">
-                    <img src="https://via.placeholder.com/400" alt="Imagen del Producto" class="producto-imagen">
+                    <img src="{{ $product->url_image}}" alt="Imagen del Producto" class="producto-imagen">
                 </div>
                 <div class="col-md-8">
                     <div class="card-body">
-                        <h3 class="card-title">Nombre del Producto</h3>
-                        <p class="card-text"><strong>Categoría:</strong> Tecnología</p>
-                        <p class="card-text"><strong>Precio:</strong> $500.000 COP</p>
-                        <p class="card-text"><strong>Descripción:</strong> Este es un producto de ejemplo con una
-                            descripción detallada para mostrar cómo se vería en esta página.</p>
+                        <h3 class="card-title">{{$product->name}}</h3>
+                        <p class="card-text"><strong>Categoría:</strong> {{$product->category_id}}</p>
+                        <p class="card-text"><strong>Precio:</strong> ${{$product->price}} COP</p>
+                        <p class="card-text"><strong>Descripción:</strong> {{$product->description}}</p>
                         <button class="btn btn-success">Agregar al Carrito</button>
                     </div>
                 </div>

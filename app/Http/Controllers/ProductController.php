@@ -22,8 +22,9 @@ class ProductController extends Controller
         return view("products.create"); //Retorna el formulario para crear los productos
         //echo "Formulario para crear un producto";
     }
-    public function show($name){
-        return view("products.show");//Retorna el detalle de un producto
+    public function show($id){
+        $product = Product::find($id);
+        return view("products.show", ["product" => $product]);//Retorna el detalle de un producto
         //echo "Producto: $name";
     }
     public function showCat($name, $category){
