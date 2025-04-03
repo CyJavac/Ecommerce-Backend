@@ -10,8 +10,8 @@ class ProductController extends Controller
     public function index(){
 
         //Consulta a la base de datos
-        $listProducts = Product::all();
-
+        //$listProducts = Product::all();
+        $listProducts = Product::paginate(16);
 
         return view("products.index",[
             "listProducts" => $listProducts
