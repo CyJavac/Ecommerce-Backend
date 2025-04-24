@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 
 //web.php deberia ser así normalmente 
 
-Route::get('/', HomeController::class);
+Route::get('/', [HomeController::class, "welcome"]);
 
 Route::prefix("products")->controller(ProductController::class)->group(function (){
     Route::get('/', "index");
@@ -15,3 +15,6 @@ Route::prefix("products")->controller(ProductController::class)->group(function 
 });
 
 //Route::get('/products/{name}/{category}', [ProductController::class, "showCat"]);
+Auth::routes();
+
+Route::get('/home', [HomeController::class, 'index'])->name('home');
