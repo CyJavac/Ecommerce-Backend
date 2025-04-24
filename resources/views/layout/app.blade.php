@@ -6,33 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@yield("title")</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        html, body {
-            height: 100%;
-            margin: 0;
-        }
-        body {
-            display: flex;
-            flex-direction: column;
-        }
-        .content {
-            flex: 1;
-        }
-        footer {
-            background-color: orange;
-            color: white;
-            text-align: center;
-            padding: 10px 0;
-            margin-top: auto;
-        }
-        .navbar {
-            background-color: orange;
-        }
-        .navbar-brand,
-        .nav-link {
-            color: white !important;
-        }
-    </style>
+    <link rel="stylesheet" href="{{ asset("css/style.css")}}">
 </head>
 
 <body>
